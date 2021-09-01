@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background-color: #E4E9FD;
+    background-image: linear-gradient(45deg, #1a535c 50%, #4ecdc4 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+}
+
+.OL {
+    position: relative;
+    right: 8px;
+}
+
+.LISTPAGE {
+    min-height: 500px;
+    height: max-content;
+    width: 500px;
+    background-color: bisque;
+    margin: 100px auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.LISTPAGE h1 {
+    font-family: 'Gochi Hand', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px double black;
+}
+
+.LISTHEAD {}

@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #efefef;
+}
+
+.DEPTLOGO {
+    width: fit-content;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.DEPTLOGO a {
+    text-decoration: none;
+    color: black;
+}
+
+.DEPTLOGO a:hover {
+    color: #ff3b3f;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.NAVBAR {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "LOGO LINKLIST";
+    background-color: white;
+}
+
+.LOGO {
+    margin: 5px 20px;
+    background-color: white;
+    display: flex;
+}
+
+.LOGOHEADING {
+    background-color: white;
+}
+
+.LOGO a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.LOGO img {
+    background-color: white;
+}
+
+.LINKLIST {
+    list-style: none;
+    display: inline-flex;
+    margin: auto 20px auto auto;
+    background-color: white;
+}
+
+.LINK {
+    margin: auto 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.LINKLIST a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.LINKLIST a:hover {
+    color: #ff3b3f;
+    background-color: white;
+}
+
+.CONTAINER {
+    display: grid;
+    grid-template-columns: 67% 28%;
+    grid-gap: 5%;
+    grid-template-areas: "WRAPPER1 WRAPPER2";
+}
+
+.SOCIALLINKS {
+    list-style: none;
+    margin: 0 auto 20px 0;
+}
+
+.SOCIALLINKS li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.SOCIALLINKS li a {
+    color: #ff3b3f;
+}
+
+.SOCIALLINKS li a:hover {
+    color: black;
+}
+
+.BODY {
+    width: 90%;
+    margin: 50px 5%;
+}
+
+.CONTENT {
+    width: 100%;
+    height: max-content;
+}
+
+.LINKBUTTONS {
+    background-color: #ff3b3f;
+    padding: 10px 15px;
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+}
+
+.BLOGPOST * {
+    background-color: #CAEBF2;
+}
+
+.BLOGPOST {
+    width: 300px;
+    height: fit-content;
+    background-color: #CAEBF2;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 0;
+    /* box-shadow: 5px 5px black; */
+}
+
+.BLOGPOST p,
+.BLOGPOST h2 {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.BLOGPOST a {
+    text-decoration: none;
+    color: #ff3b3f;
+}
+
+.BLOGPOST svg {
+    background-color: #CAEBF2;
+    position: relative;
+    top: 130px;
+}
+
+.LIKE {
+    margin-left: 17px;
+    color: red;
+}
+
+.COMMENT {
+    margin-left: 160px;
+}
+
+.SHARE {
+    margin-left: 20px;
+}
+
+.CENTER {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.BLOGMORE {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.WRAPPER2 h2 {
+    text-align: center;
+}
+
+.WHATWEDO {
+    width: fit-content;
+    margin: 40PX auto;
+}
+
+.WHATWEDO h2,
+em {
+    text-align: center;
+}
+
+
+/* 
+.COL h3 {
+    background-color: transparent;
+}
+
+.COL p {
+    background: none;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    display: none;
+}
+
+.COL {
+    /* background-color: black; */
+
+.COLCONTENT {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.COLCONTENT:hover {
+    /* background-color: black; */
+    opacity: 0.7;
+    transition-delay: 1ms;
+}
+
+.WRAPPER4 {
+    width: fit-content;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-areas: "COL1 COL2""COL3 COL4";
+}
+
+.WRAPPER4 a {
+    text-decoration: none;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .textOverImage {
+        background-size: cover!important;
+    }
+}
+
+.textOverImage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px 20px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.textOverImage:hover {
+    background-size: 110%;
+}
+
+.textOverImage:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(90%);
+    /*use transform:translateY(100%); to remove footer*/
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-title);
+    transition: 0.5s 0.1s;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.textOverImage:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+    padding-top: 2em;
+    margin-top: 8px;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.textOverImage:hover:after {
+    transform: translateY(0);
+    transition: 0.5s 0.1s;
+    opacity: 1;
+}
+
+.textOverImage:hover:before {
+    transform: translateY(0);
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+
+/* #COL2 {
+    background-image: url("https://static.wixstatic.com/media/d91e6d_83c75be0c64d4d03b9b2e3e4869b341c~mv2.jpeg/v1/fill/w_388,h_375,al_tl,q_80,usm_0.66_1.00_0.01/d91e6d_83c75be0c64d4d03b9b2e3e4869b341c~mv2.webp");
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+#COL3 {
+    background-image: url("https://static.wixstatic.com/media/d91e6d_08a9689d73e64bdf97c64dec3c6182c8~mv2.png/v1/fill/w_388,h_375,al_br,q_85,usm_0.66_1.00_0.01/d91e6d_08a9689d73e64bdf97c64dec3c6182c8~mv2.webp");
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+#COL4 {
+    background-image: url("https://static.wixstatic.com/media/d91e6d_81365112ef0a442290780e9ac63a25d3~mv2.jpg/v1/fill/w_388,h_375,al_tl,q_80,usm_0.66_1.00_0.01/d91e6d_81365112ef0a442290780e9ac63a25d3~mv2.webp");
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-repeat: no-repeat;
+} */
+
+.NOAREA {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.NOSDISPLAY {
+    display: grid;
+    grid-template-columns: 18.4% 18.4% 18.4% 18.4% 18.4%;
+    grid-gap: 2%;
+    grid-template-areas: "COUNT1 COUNT2 COUNT3 COUNT4 COUNT5";
+    text-align: center;
+    margin: 100px auto;
+}
+
+.NOCOL,
+.NOCOL h3,
+.NOCOL span {
+    background-color: #CAEBF2;
+}
+
+.GALLERY {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 15%;
+    grid-template-areas: "GLCOL1 GLCOL2 GLCOL3  GLCOL4  GLCOL5  GLCOL6";
+}
+
+footer * {
+    background-color: black;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.OLINKS {
+    /* list-style: none; */
+    background-color: black;
+}
+
+.OLI {
+    /* display: inline; */
+    background-color: black;
+}
+
+.OLI a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #ff3b3f;
+}
+
+.SOCIALLINKSFOOTER {
+    list-style: none;
+    margin: 40px auto 20px auto;
+    width: fit-content;
+    background-color: black;
+}
+
+.SOCIALLINKSFOOTER li {
+    display: inline;
+    margin-right: 15px;
+    background-color: black;
+}
+
+.SOCIALLINKSFOOTER li a {
+    color: #eeeeee;
+    background-color: black;
+}
+
+.SOCIALLINKSFOOTER li svg {
+    background-color: black;
+}
+
+.SOCIALLINKSFOOTER li a:hover {
+    color: #ff3b3f;
+}
+
+#CONTACTUS * {
+    color: white;
+}
+
+.FOOTERWRAPPER {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 50% 50%;
+}
+
+#CONTACTUS {
+    text-align: right;
+}
+
+#footerdes {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+#footerdes a {
+    color: #ff3b3f;
+    text-decoration: none;
+}
+
+#footerdes svg {
+    position: relative;
+    color: #ff3b3f;
+    top: 3px;
+}
+
+.CUPARTNERS {
+    width: fit-content;
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: 40% 40%;
+    grid-gap: 40px;
+    grid-template-areas: "img1 img2" "img 3 img4" "img5 img6";
+}

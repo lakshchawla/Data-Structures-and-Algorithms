@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    width: 70%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+h2, h3{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+.body {
+    text-align: center;
+}
+
+#h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+table {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table_1 {
+    background-color: #CCDBDC;
+    padding: 200px 100px 200px 100px;
+    border: solid 10px white;
+}
+
+#table_2 {
+    background-color: #9AD1D4;
+    padding: 200px 100px 200px 100px;
+    border: solid 10px white;
+}
+
+#table_3 {
+    background-color: #80CED7;
+    padding: 200px 100px 200px 100px;
+    border: solid 10px white;
+}
+
+#table_4 {
+    background-color: #007EA7;
+    padding: 200px 100px 200px 100px;
+    border: solid 10px white;
+}
+
+#table_5 {
+    background-color: #003249;
+    padding: 200px 100px 200px 100px;
+    border: solid 10px white;
+}

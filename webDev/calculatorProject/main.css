@@ -1,0 +1,31 @@
+.keyboard {}
+
+.Display {
+    /* border: 2px solid black; */
+    height: 50px;
+    width: 240px;
+    text-align: right;
+}
+
+.centerTable {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.key {
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    margin: 0px;
+    text-align: center;
+}
+
+#displayMajor {
+    font-size: x-large;
+}
+
+.calcArea {
+    margin-top: 40px;
+}

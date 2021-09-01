@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(175, 234, 220);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+        /* rgb(4,30,66) */
+        
+        .__Header {
+            background-color: rgb(4, 30, 66);
+            color: rgb(175, 234, 220);
+            padding: 10px 8px;
+            width: 500px;
+            text-align: center;
+            margin: 50px auto 0 auto;
+        }
+        
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .__MyListDiv {
+            background-color: white;
+            width: 500px;
+            margin: 0 auto 0 auto;
+            /* list-style: none; */
+            font-family: 'Gochi Hand', cursive;
+            font-size: 20px;
+        }
+        
+        ul {
+            list-style: none;
+            font-family: 'Gochi Hand', cursive;
+        }
+        
+        #__SubmitBtn {
+            padding: 0;
+            border: 0;
+            background: none;
+        }
+        
+        #__AddItemBox {
+            height: 40px;
+            background: none;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0;
+            border-bottom: 2px solid black;
+            margin-bottom: 20px;
+        }
+        
+        .__Form {
+            font-family: 'Gochi Hand', cursive;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="__Header">
+        <h1 class="__DateHeading">
+            <%= kindOfDay %>
+        </h1>
+    </div>
+
+    <div class="__MyListDiv">
+        <ul>
+            <%for (let index=0; index < newListItem.length; index++) {%>
+                <li class="__ListItem">
+                    <%= newListItem[index]%>
+                </li>
+                <%}%>
+
+        </ul>
+
+        <div class="__Form">
+            <form action="/" method="post">
+                <input type="text" name="__AddItem" id="__AddItemBox">
+                <button type="submit" id="__SubmitBtn"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

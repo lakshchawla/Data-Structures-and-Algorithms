@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.__Container {
+    background-color: rgb(51, 51, 51, 0.7);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 30px 0 10px 0;
+    position: relative;
+    bottom: 200px;
+    color: white;
+}
+
+.__Header {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.__NavBar {
+    /* display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: "__LogoID __NavLinks __SocLinks"; */
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.__Logo {
+    font-size: 30px;
+    color: #4568dc;
+    text-decoration: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 0 0 10px;
+}
+
+.__Header a:link,
+a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.__Links {
+    font-family: 'Mate SC', serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.__NavLinks {
+    width: fit-content;
+    margin: auto;
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 17px;
+    padding-left: 10px;
+}
+
+.__NavLinks li {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.__NavLinks li a {
+    padding: 8px 15px;
+}
+
+.__NavLinks li a:hover {
+    background-image: linear-gradient(to right, #4568dc, #b06ab3);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.__SocialLinks {
+    list-style: none;
+    display: inline;
+    text-align: right;
+    height: fit-content;
+    width: fit-content;
+    margin: auto 10px auto auto;
+}
+
+.__SocialLink {
+    margin: 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: right;
+}
+
+.__SocialLink svg:hover {
+    color: #ba38db;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+    .__DETCOL {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: '__DetCol1 __DetCol2';
+        grid-gap: 55%;
+    }
+    .list-group {
+        width: 425px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        margin: 0;
+        padding: 0;
+    }
+    .__Logo {
+        display: flex;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 40px;
+        height: 40px;
+    }
+    .__Header {
+        background-color: rgb(51, 51, 51);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .__NavBar {
+        display: block;
+        height: fit-content;
+    }
+    header {
+        display: flex;
+    }
+    .__SocialLinks {
+        list-style: none;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .__SocialLink {
+        margin: 15px;
+        display: inline-block;
+        text-decoration: none;
+        width: fit-content;
+        text-align: center;
+    }
+    .__NavLinks li a {
+        font-size: 15px;
+        padding: 0;
+    }
+    .__NavLinks li {
+        margin: 10px 5px;
+    }
+    .__NavLinkList {
+        border-top: 0;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}

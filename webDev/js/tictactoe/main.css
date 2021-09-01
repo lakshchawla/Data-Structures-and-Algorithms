@@ -1,0 +1,82 @@
+.CenterAlign {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.InputBoxes {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 
+.GameBoard {
+    margin-left: 35%;
+    /* margin-right: 50%; */
+
+
+/* } */
+
+#imgPos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ResetButtonDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.firstPos {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+td {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: large;
+}
+
+#pos1 {
+    border-bottom: thick solid rgb(219, 11, 115);
+    border-right: thick solid rgb(219, 11, 115);
+}
+
+#pos2 {
+    border-bottom: thick solid rgb(219, 11, 115);
+    border-right: thick solid rgb(219, 11, 115);
+}
+
+#pos3 {
+    border-bottom: thick solid rgb(219, 11, 115);
+}
+
+#pos4 {
+    border-bottom: thick solid rgb(219, 11, 115);
+    border-right: thick solid rgb(219, 11, 115);
+}
+
+#pos5 {
+    border-bottom: thick solid rgb(219, 11, 115);
+    border-right: thick solid rgb(219, 11, 115);
+}
+
+#pos6 {
+    border-bottom: thick solid rgb(219, 11, 115);
+}
+
+#pos7 {
+    border-right: thick solid rgb(219, 11, 115);
+}
+
+#pos8 {
+    border-right: thick solid rgb(219, 11, 115);
+}

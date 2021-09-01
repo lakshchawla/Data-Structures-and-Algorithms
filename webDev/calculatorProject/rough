@@ -1,0 +1,3 @@
+Clr.addEventListener('click', function() {
+    majorDisplay.textContent += '.';
+})

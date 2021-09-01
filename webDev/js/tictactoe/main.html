@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="HomeLink" href="#">TIC TAC TOE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron CenterAlign">
+        <h1 class="display-4 CenterAlign">TIC TAC TOE</h1>
+        <p class="lead CenterAlign">Developed by Lakshay Chawla</p>
+        <hr class="my-4 CenterAlign">
+
+        <form>
+            <div class="form-row  InputBoxes">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Player</label>
+                    <input type="text" class="form-control" id="inputEmail4" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Second Player</label>
+                    <input type="text" class="form-control" id="inputPassword4" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg CenterAlign">Start Game</button>
+        </form>
+
+    </div>
+
+    <div>
+        <p class="lead CenterAlign playerTurn">Player Turn</p>
+    </div>
+
+    <div class="GameBoard">
+
+        <table align='center'>
+            <tr>
+                <td id="pos1"></td>
+                <td id="pos2"></td>
+                <td id="pos3"></td>
+            </tr>
+            <tr>
+                <td id="pos4"></td>
+                <td id="pos5"></td>
+                <td id="pos6"></td>
+            </tr>
+            <tr>
+                <td id="pos7"></td>
+                <td id="pos8"></td>
+                <td id="pos9"></td>
+            </tr>
+        </table>
+
+        <div class="firststPos">1</div>
+
+
+    </div>
+
+    <div class="ResetButtonDiv">
+        <button type="button" class="btn btn-dark CenterAlign" id="ResetButton">Reset</button>
+    </div>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
