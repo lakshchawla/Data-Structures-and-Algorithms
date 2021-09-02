@@ -2,7 +2,7 @@ package stack;
 
 import java.util.Scanner;
 
-public class reverseSentence {
+public class Reverse{
     public static class Stack{
         int max = 100;
         int top;
@@ -39,28 +39,8 @@ public class reverseSentence {
     }
 
     static Scanner sc = new Scanner(System.in);
-    
-    public static void pushToStack(Stack senStack, String sentence) {
-        int p = 0;
-        for (int i = 0; i < sentence.length(); i++) {
-
-            if(sentence.charAt(i) == ' '){
-                senStack.push(sentence.substring(p, i));
-                p = i;
-            } else if(sentence.charAt(i) != ' ' && i == sentence.length()-1) senStack.push(sentence.substring(p, i+1));
-        }
-    }
-    
-    public static void main(String[] args) {
-        // String sentence = sc.nextLine();
-        String sentence = "I am Lakshay";
-        Stack senStack = new Stack();
-
-        // System.out.println(sentence.substring(0,3));
-        pushToStack(senStack, sentence);
         
-        senStack.printStack(); 
-    }
-
-    
+    public static void main(String[] args) {
+        
+    }   
 }
